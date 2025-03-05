@@ -19,9 +19,9 @@ commands is a Skiddie-friendly Crystal Shard to make it easier to execute comman
 
 dependencies: 
 
-	commands:
+         commands:
 
-		github: Pr0ngleDev/commands
+              github: Pr0ngleDev/commands
 
 ```
 
