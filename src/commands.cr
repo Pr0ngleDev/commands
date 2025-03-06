@@ -1,12 +1,13 @@
 require "process"
 module Commands
-  VERSION = "0.1.0"
+  VERSION = "1.0.0"
   def self.executeCommand(c : String)
     Process.run(command: "bash") do |s|
       i = s.input
       o = s.output
       i.puts c
-      return o.gets
+      output = o.gets
+      return output.nil? ? "" : output
     end
   end
 
