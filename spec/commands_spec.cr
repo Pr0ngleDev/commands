@@ -11,6 +11,12 @@ describe Commands do
     status = Commands.executeProcess("echo Hello world")
     status.should eq("0")
   end   
+
+  it "returns string type" do
+    output = Commands.executeCommand("echo Hello world")
+    output.should be_a(String)
+  end
 end
+
 
 
