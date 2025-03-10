@@ -45,7 +45,7 @@ require "commands"
 execCommand can be used to execute a bash command and receive its output <br>
 
 ```crystal
-.execCommand("Hello World") # Returns Hello World
+Crystal.execCommand("Hello World") # Returns Hello World
 ```
 <br>
   
@@ -53,7 +53,7 @@ execCommand can be used to execute a bash command and receive its output <br>
 
 execProscess can be used to execute a bash command and recieve its error code <br>
 ``` crystal
-.execProcess("echo Hello World") # Returns 0
+Crystal.execProcess("echo Hello World") # Returns 0
 ```
 <br>
 <br>
@@ -64,7 +64,7 @@ execProscess can be used to execute a bash command and recieve its error code <b
 <br>
 
    ``` crystal
-    foo = .executeCommand("echo foo")
+    foo = Crystal.executeCommand("echo foo")
     puts foo 
    ```
    This would print foo to the stdout
@@ -72,7 +72,7 @@ execProscess can be used to execute a bash command and recieve its error code <b
 <br>
 
 ```crystal
-	foo = .executeCommand("echo haha")
+	foo = Crystal.executeCommand("echo haha")
 	puts foo.reverse
 ```
 This would print ahah to the stdout
