@@ -26,5 +26,4 @@ module Commands
       o.close
     end
   end
-  # TODO: Put your code here
 end
